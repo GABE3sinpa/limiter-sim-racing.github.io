@@ -1,21 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Limiter Sim Racing</title>
+  <meta charset="UTF-8">
+</head>
 <body style="margin:0; font-family:sans-serif; background-color:#111; color:white;">
 
-<!-- HEADER -->
-<header style="display:flex; justify-content:space-between; align-items:center; padding:15px 30px; background-color:#111;">
+<!-- HEADER WITH METALLIC NAV -->
+<header style="
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  background-color:#111;
+  background-image: url('https://i.imgur.com/XZkVh9E.png'); /* carbon fiber */
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  border-bottom: 2px solid #444;
+">
   <div class="logo">
     <a href="index.html">
       <img src="https://i.imgur.com/E2GYcym.png" alt="LIMITER SIM RACING" style="height:60px; width:auto; display:block;">
     </a>
   </div>
-  <nav>
-    <a href="index.html" style="color:white; text-decoration:none; margin-left:20px; font-weight:bold;"
-       onmouseover="this.style.color='#ff0000';" onmouseout="this.style.color='white';">Home</a>
-    <a href="about.html" style="color:white; text-decoration:none; margin-left:20px; font-weight:bold;"
-       onmouseover="this.style.color='#ff0000';" onmouseout="this.style.color='white';">About</a>
-    <a href="drivers.html" style="color:white; text-decoration:none; margin-left:20px; font-weight:bold;"
-       onmouseover="this.style.color='#ff0000';" onmouseout="this.style.color='white';">Drivers</a>
-    <a href="events.html" style="color:white; text-decoration:none; margin-left:20px; font-weight:bold;"
-       onmouseover="this.style.color='#ff0000';" onmouseout="this.style.color='white';">Events</a>
+  <nav style="display:flex; align-items:center;">
+    <a href="index.html" style="
+      color:white; text-decoration:none; margin-left:20px; font-weight:bold; 
+      padding:5px 10px; border-radius:5px;
+      transition: all 0.3s ease;
+    " 
+       onmouseover="this.style.color='#ff0000'; this.style.textShadow='0 0 10px #ff0000'; this.style.backgroundColor='rgba(255,255,255,0.05)';"
+       onmouseout="this.style.color='white'; this.style.textShadow='none'; this.style.backgroundColor='transparent';"
+    >Home</a>
+    <a href="about.html" style="
+      color:white; text-decoration:none; margin-left:20px; font-weight:bold; 
+      padding:5px 10px; border-radius:5px;
+      transition: all 0.3s ease;
+    " 
+       onmouseover="this.style.color='#ff0000'; this.style.textShadow='0 0 10px #ff0000'; this.style.backgroundColor='rgba(255,255,255,0.05)';"
+       onmouseout="this.style.color='white'; this.style.textShadow='none'; this.style.backgroundColor='transparent';"
+    >About</a>
+    <a href="drivers.html" style="
+      color:white; text-decoration:none; margin-left:20px; font-weight:bold; 
+      padding:5px 10px; border-radius:5px;
+      transition: all 0.3s ease;
+    " 
+       onmouseover="this.style.color='#ff0000'; this.style.textShadow='0 0 10px #ff0000'; this.style.backgroundColor='rgba(255,255,255,0.05)';"
+       onmouseout="this.style.color='white'; this.style.textShadow='none'; this.style.backgroundColor='transparent';"
+    >Drivers</a>
+    <a href="events.html" style="
+      color:white; text-decoration:none; margin-left:20px; font-weight:bold; 
+      padding:5px 10px; border-radius:5px;
+      transition: all 0.3s ease;
+    " 
+       onmouseover="this.style.color='#ff0000'; this.style.textShadow='0 0 10px #ff0000'; this.style.backgroundColor='rgba(255,255,255,0.05)';"
+       onmouseout="this.style.color='white'; this.style.textShadow='none'; this.style.backgroundColor='transparent';"
+    >Events</a>
   </nav>
 </header>
 
@@ -32,7 +72,8 @@
 </main>
 
 <!-- FOOTER -->
-<footer style="background-color:#111; color:white; text-align:center; padding:30px 20px; border-top:2px solid #444;">
+<footer style="background-color:#111; color:white; text-align:center; padding:30px 20px; border-top:2px solid #444;
+               background-image: url('https://i.imgur.com/XZkVh9E.png'); background-size: cover;">
   <div class="partners-section" style="margin-bottom:15px;">
     <h3 style="margin-bottom:15px; font-size:18px;">Partners</h3>
     <div style="display:flex; justify-content:center; align-items:center; gap:15px; flex-wrap:wrap;">
@@ -44,3 +85,6 @@
   </div>
   <div style="font-size:0.9em;">© Limiter Sim Racing</div>
 </footer>
+
+</body>
+</html>
