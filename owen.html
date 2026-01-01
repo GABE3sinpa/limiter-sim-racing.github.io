@@ -2,35 +2,64 @@
 <html lang="en">
 <head>
   <title>Owen Miller — Limiter Sim Racing</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
 </head>
-<body>
+<body style="margin:0; font-family:sans-serif; background-color:#111; color:white;">
 
-<header>
+<!-- HEADER -->
+<header style="
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  background-color:#111;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  border-bottom: 2px solid #444;
+">
   <div class="logo">
     <a href="index.html">
-      <img src="https://i.imgur.com/E2GYcym.png" alt="LIMITER SIM RACING" width="200">
+      <img src="https://i.imgur.com/E2GYcym.png" alt="LIMITER SIM RACING" style="height:60px; width:auto; display:block;">
     </a>
   </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="drivers.html">Drivers</a>
-    <a href="events.html">Events</a>
+  <nav style="display:flex; align-items:center;">
+    <a href="index.html" style="color:white; text-decoration:none; margin-left:20px; font-weight:bold; padding:5px 10px; border-radius:5px; transition:all .3s;"
+       onmouseover="this.style.color='#00ff00'; this.style.textShadow='0 0 10px #00ff00';"
+       onmouseout="this.style.color='white'; this.style.textShadow='none';">Home</a>
+    <a href="about.html" style="color:white; text-decoration:none; margin-left:20px; font-weight:bold; padding:5px 10px; border-radius:5px; transition:all .3s;"
+       onmouseover="this.style.color='#00ff00'; this.style.textShadow='0 0 10px #00ff00';"
+       onmouseout="this.style.color='white'; this.style.textShadow='none';">About</a>
+    <a href="drivers.html" style="color:white; text-decoration:none; margin-left:20px; font-weight:bold; padding:5px 10px; border-radius:5px; transition:all .3s; border-bottom:2px solid #00ff00;"
+       onmouseover="this.style.color='#00ff00'; this.style.textShadow='0 0 10px #00ff00';"
+       onmouseout="this.style.color='#00ff00'; this.style.textShadow='none';">Drivers</a>
+    <a href="events.html" style="color:white; text-decoration:none; margin-left:20px; font-weight:bold; padding:5px 10px; border-radius:5px; transition:all .3s;"
+       onmouseover="this.style.color='#00ff00'; this.style.textShadow='0 0 10px #00ff00';"
+       onmouseout="this.style.color='white'; this.style.textShadow='none';">Events</a>
   </nav>
 </header>
 
+<!-- MAIN CONTENT -->
+<main style="max-width:800px; margin:50px auto; padding:0 20px; text-align:center;">
 
-<main>
-  <h1>Owen Miller</h1>
-  <p>Driver, #99</p>
-  <p>Based: Pittsburgh, Pittsburgh</p>
-  <p>Co-Founder/p>
+  <!-- DRIVER CARD -->
+  <div style="background-color:#1a1a1a; padding:30px; border-radius:10px; box-shadow:0 6px 15px rgba(0,255,0,0.3); max-width:500px; margin:0 auto;">
+    
+    <!-- PHOTO PLACEHOLDER -->
+    <img src="YOUR_DRIVER_PHOTO_URL" alt="Gabriel Acuña" style="width:100%; max-width:300px; height:auto; border-radius:10px; margin-bottom:20px; display:block; margin-left:auto; margin-right:auto;">
+    
+    <!-- DRIVER INFO -->
+    <h1 style="margin-bottom:10px; font-size:2em;">Owen Miller</h1>
+    <p style="margin-bottom:5px; color:#00ff00; font-weight:bold;">Driver #21</p>
+    <p style="margin-bottom:5px;">Based in: Pittsburgh, Pennsylvania</p>
+    <p style="margin-bottom:0;">Co-Founder</p>
+
+  </div>
+
 </main>
 
-<footer style="background-color:#111; color:white; text-align:center; padding:20px; font-family:sans-serif;">
-  <div class="partners-section">
-    <h3 style="margin-bottom:10px; font-size:18px;">Partners</h3>
+<!-- FOOTER -->
+<footer style="background-color:#111; color:white; text-align:center; padding:30px 20px; border-top:2px solid #444;">
+  <div class="partners-section" style="margin-bottom:15px;">
+    <h3 style="margin-bottom:15px; font-size:18px;">Partners</h3>
     <div style="display:flex; justify-content:center; align-items:center; gap:15px; flex-wrap:wrap;">
       <img src="https://i.imgur.com/3jQcmYU.png" alt="Partner 1" style="max-height:40px; width:auto; display:block;">
       <img src="https://i.imgur.com/G62515x.png" alt="Partner 2" style="max-height:40px; width:auto; display:block;">
@@ -38,7 +67,7 @@
       <img src="https://i.imgur.com/n8Z2KkR.png" alt="Partner 4" style="max-height:40px; width:auto; display:block;">
     </div>
   </div>
-  <div style="margin-top:10px;">© Limiter Sim Racing</div>
+  <div style="font-size:0.9em;">© Limiter Sim Racing</div>
 </footer>
 
 </body>
