@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root {
+  --lime: #BFFF00;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+header {
+  padding: 40px;
+  border-bottom: 1px solid #222;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--lime);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--lime);
+}
+
+main {
+  padding: 60px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1 {
+  color: var(--lime);
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.card {
+  border: 1px solid #222;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--black);
+  background: var(--lime);
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  padding: 30px;
+  border-top: 1px solid #222;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #777;
+}
