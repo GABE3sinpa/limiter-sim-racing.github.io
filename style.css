@@ -3,7 +3,11 @@
 :root {
   --lime: #BFFF00;
   --black: #000000;
-  --white: #ffffff;
+  --dark: #0b0b0b;
+  --gray: #1a1a1a;
+  --text: #ffffff;
+  --muted: #9a9a9a;
+  --border: #222;
 }
 
 * {
@@ -15,68 +19,161 @@
 body {
   font-family: 'Inter', sans-serif;
   background: var(--black);
-  color: var(--white);
+  color: var(--text);
   line-height: 1.6;
 }
 
+/* =========================
+   HEADER (MOTORSPORT STYLE)
+========================= */
+
 header {
-  padding: 40px;
-  border-bottom: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--lime);
+  letter-spacing: 2px;
+}
+
+/* NAV */
 nav a {
-  color: var(--white);
+  color: var(--text);
   text-decoration: none;
-  margin-right: 20px;
+  margin-left: 18px;
   font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* underline animation */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: var(--lime);
+  transition: 0.3s ease;
 }
 
 nav a:hover {
   color: var(--lime);
 }
 
-.logo {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--lime);
+nav a:hover::after {
+  width: 100%;
 }
 
+/* =========================
+   MAIN LAYOUT
+========================= */
+
 main {
-  padding: 60px 40px;
+  padding: 70px 40px;
   max-width: 1100px;
   margin: auto;
 }
 
+/* =========================
+   TYPOGRAPHY
+========================= */
+
 h1 {
   color: var(--lime);
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 h2 {
   margin-top: 40px;
   margin-bottom: 10px;
+  font-size: 1.6rem;
 }
 
-.card {
-  border: 1px solid #222;
-  padding: 20px;
-  margin-top: 20px;
+p {
+  color: var(--muted);
+  font-size: 1rem;
 }
+
+/* =========================
+   CARDS (GT TEAM STYLE)
+========================= */
+
+.card {
+  background: var(--gray);
+  border: 1px solid var(--border);
+  padding: 22px;
+  margin-top: 20px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--lime);
+  box-shadow: 0 0 20px rgba(191,255,0,0.08);
+}
+
+/* =========================
+   BUTTONS (MOTORSPORT CTA)
+========================= */
 
 .button {
   display: inline-block;
   margin-top: 15px;
-  color: var(--black);
-  background: var(--lime);
-  padding: 10px 16px;
+  padding: 10px 18px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  background: var(--lime);
+  color: var(--black);
+  border-radius: 4px;
+  transition: 0.3s ease;
 }
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 18px rgba(191,255,0,0.4);
+}
+
+/* =========================
+   SECTIONS (CLEAN SPACING)
+========================= */
+
+section {
+  margin-top: 40px;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
   padding: 30px;
-  border-top: 1px solid #222;
+  border-top: 1px solid var(--border);
   font-size: 0.8rem;
   text-align: center;
-  color: #777;
+  color: #666;
+  margin-top: 60px;
 }
