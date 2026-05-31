@@ -1,224 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Limiter Sim Racing</title>
-
-<style>
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b0b0b;
-  color: white;
-  scroll-snap-type: y mandatory;
-  overflow-x: hidden;
-}
-
-/* smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* ---------- HEADER ---------- */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 40px;
-  background: rgba(0,0,0,0.65);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #1f1f1f;
-  z-index: 10;
-}
-
-.left, .right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-/* nav */
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  position: relative;
-  transition: 0.3s ease;
-}
-
-nav a:hover {
-  color: #00ff00;
-  text-shadow: 0 0 10px #00ff00;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: #00ff00;
-  transition: 0.3s ease;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-/* ---------- SECTIONS ---------- */
-section {
-  height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-/* ---------- HERO ---------- */
-.hero {
-  background: url('https://i.imgur.com/haM5LN7.png') center/cover no-repeat;
-}
-
-.overlay {
-  background: rgba(0,0,0,0.55);
-  padding: 50px;
-  text-align: center;
-  border-radius: 10px;
-  border: 1px solid rgba(0,255,0,0.15);
-}
-
-.overlay h1 {
-  font-size: 3.2em;
-  margin: 0;
-}
-
-.overlay p {
-  color: #bbb;
-}
-
-/* ---------- OTHER SECTIONS ---------- */
-.dark { background: #0b0b0b; }
-.black { background: #000; }
-
-/* ---------- BUTTONS ---------- */
-.btn {
-  display: inline-block;
-  padding: 12px 20px;
-  margin-top: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.btn-green {
-  background: #00ff00;
-  color: black;
-}
-
-.btn-green:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 20px rgba(0,255,0,0.4);
-}
-
-.btn-outline {
-  border: 1px solid #00ff00;
-  color: #00ff00;
-}
-
-.btn-outline:hover {
-  background: #00ff00;
-  color: black;
-  transform: translateY(-3px);
-  box-shadow: 0 0 20px rgba(0,255,0,0.4);
-}
-
-/* ---------- SMALL TAG ---------- */
-.tag {
-  font-size: 0.85em;
-  letter-spacing: 2px;
-  color: #888;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <title>Limiter Sim Racing</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
+  <div class="logo">LIMITER SIM RACING</div>
 
-  <!-- LEFT: TEAM -->
-  <div class="left">
-    <img src="https://i.imgur.com/E2GYcym.png" style="height:45px;">
-  </div>
-
-  <!-- CENTER NAV -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="drivers.html">Drivers</a>
     <a href="events.html">Events</a>
   </nav>
-
-  <!-- RIGHT: OEM BADGE -->
-  <div class="right">
-    <img src="https://i.imgur.com/3GLnckE.png" style="height:28px; opacity:0.85;">
-  </div>
-
 </header>
 
-<!-- HERO -->
-<section class="hero">
+<main>
 
-  <div class="overlay">
-    <div class="tag">ENDURANCE SIM RACING TEAM</div>
-    <h1>LIMITER SIM RACING</h1>
-    <p>Ford Mustang GT3 | iRacing Endurance Program</p>
+  <!-- HERO -->
+  <section>
+    <h1>Ford Mustang GT3 Program</h1>
 
-    <a href="events.html" class="btn btn-green">VIEW EVENTS</a>
-  </div>
-
-</section>
-
-<!-- SECTION 2 -->
-<section class="dark">
-  <div style="text-align:center; max-width:650px;">
-    <h2>Built for Endurance</h2>
-    <p style="color:#aaa; line-height:1.6;">
-      Precision, consistency, and long-run execution define the team’s approach.
-      Every stint is structured. Every race is strategy-driven.
+    <p>
+      Endurance-focused sim racing team competing in iRacing special events,
+      built around consistency, strategy, and long-distance execution.
     </p>
-    <a href="about.html" class="btn btn-outline">About Team</a>
-  </div>
-</section>
 
-<!-- SECTION 3 -->
-<section class="black">
-  <div style="text-align:center; max-width:650px;">
+    <a class="button" href="events.html">View Events</a>
+  </section>
+
+  <!-- HERO IMAGE -->
+  <section>
+    <img src="https://i.imgur.com/haM5LN7.png" alt="Mustang GT3 at Spa">
+  </section>
+
+  <!-- TEAM PHILOSOPHY -->
+  <section class="card">
+    <h2>Endurance Philosophy</h2>
+    <p>
+      Success in endurance racing is defined by consistency over speed.
+      The team focuses on clean stints, predictable pace, and structured race execution.
+    </p>
+  </section>
+
+  <!-- PROGRAM -->
+  <section class="card">
     <h2>Ford Mustang GT3</h2>
-    <p style="color:#aaa;">
-      The platform used across all endurance entries — built for stability, traffic management, and race distance performance.
+    <p>
+      The primary platform for all endurance entries.
+      Selected for stability in traffic and long-run performance in multi-class environments.
     </p>
-    <a href="drivers.html" class="btn btn-green">Meet Drivers</a>
-  </div>
-</section>
+  </section>
 
-<!-- SECTION 4 -->
-<section class="dark">
-  <div style="text-align:center; max-width:650px;">
-    <h2>iRacing Endurance Program</h2>
-    <p style="color:#aaa;">
-      Special events, multi-class racing, and structured team strategy execution.
+  <!-- TEAM INFO -->
+  <section class="card">
+    <h2>Team Overview</h2>
+    <p>Founded: 2026</p>
+    <p>Platform: iRacing</p>
+    <p>Discipline: Endurance Racing</p>
+    <p>Car: Ford Mustang GT3</p>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section>
+    <h2>Follow The Program</h2>
+    <p>
+      Track race entries, endurance events, and team performance across the iRacing calendar.
     </p>
-    <a href="events.html" class="btn btn-green">View Events</a>
-  </div>
-</section>
+
+    <a class="button" href="drivers.html">Meet Drivers</a>
+  </section>
+
+</main>
+
+<footer>
+  © Limiter Sim Racing
+</footer>
 
 </body>
 </html>
