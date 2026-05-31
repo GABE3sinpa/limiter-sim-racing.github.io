@@ -1,84 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Limiter Sim Racing</title>
   <meta charset="UTF-8">
+  <title>Limiter Sim Racing</title>
 </head>
-<body style="margin:0; font-family:sans-serif; background-color:#111; color:white;">
+
+<body style="margin:0; font-family:Arial, sans-serif; background:#0b0b0b; color:white;">
 
 <!-- HEADER -->
 <header style="
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:15px 30px;
-  background-color:#111;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-  border-bottom: 2px solid #444;
+  padding:18px 40px;
+  background:#0b0b0b;
+  border-bottom:1px solid #1f1f1f;
 ">
-  <div class="logo">
-    <a href="index.html">
-      <img src="https://i.imgur.com/E2GYcym.png" alt="LIMITER SIM RACING" style="height:60px; width:auto; display:block;">
-    </a>
-  </div>
-  <nav style="display:flex; align-items:center;">
-    <a href="index.html" style="
-      color:white; text-decoration:none; margin-left:20px; font-weight:bold; 
-      padding:5px 10px; border-radius:5px; transition: all 0.3s ease;"
-       onmouseover="this.style.color='#00ff00'; this.style.textShadow='0 0 10px #00ff00'; this.style.backgroundColor='rgba(255,255,255,0.05)';"
-       onmouseout="this.style.color='white'; this.style.textShadow='none'; this.style.backgroundColor='transparent';"
-    >Home</a>
-    <a href="about.html" style="
-      color:white; text-decoration:none; margin-left:20px; font-weight:bold; 
-      padding:5px 10px; border-radius:5px; transition: all 0.3s ease;"
-       onmouseover="this.style.color='#00ff00'; this.style.textShadow='0 0 10px #00ff00'; this.style.backgroundColor='rgba(255,255,255,0.05)';"
-       onmouseout="this.style.color='white'; this.style.textShadow='none'; this.style.backgroundColor='transparent';"
-    >About</a>
-    <a href="drivers.html" style="
-      color:white; text-decoration:none; margin-left:20px; font-weight:bold; 
-      padding:5px 10px; border-radius:5px; transition: all 0.3s ease;"
-       onmouseover="this.style.color='#00ff00'; this.style.textShadow='0 0 10px #00ff00'; this.style.backgroundColor='rgba(255,255,255,0.05)';"
-       onmouseout="this.style.color='white'; this.style.textShadow='none'; this.style.backgroundColor='transparent';"
-    >Drivers</a>
-    <a href="events.html" style="
-      color:white; text-decoration:none; margin-left:20px; font-weight:bold; 
-      padding:5px 10px; border-radius:5px; transition: all 0.3s ease;"
-       onmouseover="this.style.color='#00ff00'; this.style.textShadow='0 0 10px #00ff00'; this.style.backgroundColor='rgba(255,255,255,0.05)';"
-       onmouseout="this.style.color='white'; this.style.textShadow='none'; this.style.backgroundColor='transparent';"
-    >Events</a>
+
+  <img src="https://i.imgur.com/E2GYcym.png" style="height:50px;">
+
+  <nav>
+    <a href="index.html" style="color:#00ff00; margin:0 10px; text-decoration:none;">Home</a>
+    <a href="about.html" style="color:white; margin:0 10px; text-decoration:none;">About</a>
+    <a href="drivers.html" style="color:white; margin:0 10px; text-decoration:none;">Drivers</a>
+    <a href="events.html" style="color:white; margin:0 10px; text-decoration:none;">Events</a>
   </nav>
+
 </header>
 
-<!-- MAIN CONTENT WITH CAR HERO IMAGE -->
-<main style="max-width:900px; margin:50px auto; padding:0 20px; line-height:1.6; text-align:center;">
+<!-- HERO (ENDURANCE STYLE) -->
+<section style="
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:90px 60px;
+  min-height:80vh;
+  background:linear-gradient(180deg, #0b0b0b, #000);
+">
 
-  <!-- CAR HERO IMAGE -->
-  <img src="https://i.imgur.com/xECAugM.png" alt="#91 Porsche 992 GT3 R" 
-       style="max-width:100%; height:auto; margin-bottom:30px; border-radius:10px; box-shadow: 0 8px 20px rgba(0,0,0,0.7);">
+  <!-- TEXT -->
+  <div style="max-width:520px;">
+    <p style="color:#888; letter-spacing:2px; font-size:0.9em;">
+      ENDURANCE SIM RACING TEAM
+    </p>
 
-  <h1 style="font-size:2.2em; margin-bottom:20px;">#91 Porsche 992 GT3 R</h1>
-  <p style="font-size:1.1em; margin-bottom:30px;">
-    Limiter Sim Racing is a two-driver iRacing endurance team based out of Pittsburgh, Pennsylvania competing in events,
-    such as the Daytona 24 Hours.
-  </p>
+    <h1 style="font-size:3.5em; margin:10px 0; line-height:1;">
+      LIMITER<br>SIM RACING
+    </h1>
 
-  <h2 style="font-size:1.5em; margin-bottom:15px;">Partners</h2>
-  <p style="font-size:1.1em; margin-bottom:30px;">MOZA Racing · iRacing · Porsche · Michelin</p>
+    <p style="color:#aaa; font-size:1.05em; line-height:1.6;">
+      Competing in iRacing endurance events with the Ford Mustang GT3.
+      Focused on consistency, race execution, and long-distance performance.
+    </p>
 
-</main>
+    <div style="margin-top:25px;">
+      <a href="events.html" style="
+        background:#00ff00;
+        color:#000;
+        padding:10px 18px;
+        text-decoration:none;
+        font-weight:bold;
+      ">EVENTS</a>
 
-<!-- FOOTER -->
-<footer style="background-color:#111; color:white; text-align:center; padding:30px 20px; border-top:2px solid #444;">
-  <div class="partners-section" style="margin-bottom:15px;">
-    <h3 style="margin-bottom:15px; font-size:18px;">Partners</h3>
-    <div style="display:flex; justify-content:center; align-items:center; gap:15px; flex-wrap:wrap;">
-      <img src="https://i.imgur.com/3jQcmYU.png" alt="Partner 1" style="max-height:40px; width:auto; display:block;">
-      <img src="https://i.imgur.com/G62515x.png" alt="Partner 2" style="max-height:40px; width:auto; display:block;">
-      <img src="https://i.imgur.com/hTUYB3s.png" alt="Partner 3" style="max-height:40px; width:auto; display:block;">
-      <img src="https://i.imgur.com/n8Z2KkR.png" alt="Partner 4" style="max-height:40px; width:auto; display:block;">
+      <a href="drivers.html" style="
+        border:1px solid #00ff00;
+        color:#00ff00;
+        padding:10px 18px;
+        text-decoration:none;
+        margin-left:10px;
+      ">DRIVERS</a>
     </div>
   </div>
-  <div style="font-size:0.9em;">© Limiter Sim Racing</div>
+
+  <!-- CAR IMAGE -->
+  <div style="flex:1; display:flex; justify-content:center;">
+    <img src="YOUR_MUSTANG_IMAGE_URL"
+         style="width:100%; max-width:700px; filter:drop-shadow(0 0 15px rgba(0,255,0,0.15));">
+  </div>
+
+</section>
+
+<!-- SIMPLE INFO STRIP -->
+<section style="
+  display:flex;
+  justify-content:space-around;
+  padding:35px 20px;
+  background:#0f0f0f;
+  border-top:1px solid #1f1f1f;
+  border-bottom:1px solid #1f1f1f;
+">
+
+  <div style="text-align:center;">
+    <div style="color:#00ff00; font-size:1.3em;">2026</div>
+    <div style="color:#777;">Founded</div>
+  </div>
+
+  <div style="text-align:center;">
+    <div style="color:#00ff00; font-size:1.3em;">Ford Mustang GT3</div>
+    <div style="color:#777;">Primary Car</div>
+  </div>
+
+  <div style="text-align:center;">
+    <div style="color:#00ff00; font-size:1.3em;">iRacing</div>
+    <div style="color:#777;">Endurance Platform</div>
+  </div>
+
+</section>
+
+<!-- ENDURANCE STATEMENT -->
+<section style="padding:80px 40px; text-align:center;">
+
+  <h2 style="font-size:2em; margin-bottom:15px;">
+    Endurance Focus
+  </h2>
+
+  <p style="max-width:750px; margin:0 auto; color:#aaa; line-height:1.7;">
+    Limiter Sim Racing is built around endurance racing principles.
+    The team prioritizes consistency, strategy, and clean execution across long-distance events,
+    developing pace over extended stints rather than short sprint performance.
+  </p>
+
+</section>
+
+<!-- FOOTER -->
+<footer style="
+  padding:25px;
+  text-align:center;
+  border-top:1px solid #1f1f1f;
+  color:#666;
+">
+
+  © Limiter Sim Racing
+
 </footer>
 
 </body>
