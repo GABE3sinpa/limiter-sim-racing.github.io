@@ -19,48 +19,23 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ---------- HEADER ---------- */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
-  z-index: 10;
-  border-bottom: 1px solid #222;
-}
+<header>
 
-nav a {
-  color: white;
-  margin: 0 12px;
-  text-decoration: none;
-  position: relative;
-  transition: 0.3s ease;
-}
+  <!-- TEAM LOGO (LEFT) -->
+  <img src="https://i.imgur.com/E2GYcym.png" style="height:45px;">
 
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0%;
-  height: 2px;
-  background: #00ff00;
-  transition: 0.3s ease;
-}
+  <!-- NAV -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="drivers.html">Drivers</a>
+    <a href="events.html">Events</a>
+  </nav>
 
-nav a:hover {
-  color: #00ff00;
-  text-shadow: 0 0 10px #00ff00;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
+  <!-- OEM / PARTNER BADGE (RIGHT) -->
+  <img src="https://i.imgur.com/3GLnckE.png"
+       style="height:28px; opacity:0.8;">
+</header>
 
 /* ---------- SLIDES ---------- */
 section {
